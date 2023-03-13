@@ -3,15 +3,12 @@ body {
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
-body ul {
-  text-decoration: none;
-  list-style: none;
-}
 
 .logo-header {
   width: 100%;
   height: 63px;
   position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .logo-header img {
   width: 162px;
@@ -61,12 +58,20 @@ body ul {
   border: none;
   background: linear-gradient(-15deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 83%);
   margin: 27px 0 60px 0;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 150ms;
 }
 .prez button a {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.prez button:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
 }
 
 .fonction {
@@ -96,6 +101,9 @@ body ul {
   border-radius: 20px;
   font-size: 16px;
   font-weight: 500;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 150ms;
 }
 .fonction .fonction__box .fonction__box--pin {
   position: absolute;
@@ -119,6 +127,41 @@ body ul {
 .fonction .fonction__box:hover {
   background: #F5EDFF;
   color: #9356DC;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+}
+
+.restaurants {
+  width: 100%;
+  background: #fafafa;
+}
+.restaurants h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 48px;
+  margin-left: 20px;
+}
+
+.container__card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.container__card article {
+  width: 90%;
+  height: 251px;
+  border-radius: 25px;
+  background: #FFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.container__card article img {
+  width: 100%;
+  height: 174px;
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

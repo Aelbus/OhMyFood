@@ -1,21 +1,22 @@
+@import "components/_buttons.scss";
+@import "utils/mixins";
 body {
     width: 375px;
     margin: auto;
     font-family: "Roboto", sans-serif;
-    ul {
-        text-decoration: none;
-        list-style: none;
-    }
 }
+
 .logo-header {
     width: 100%;
     height: 63px;
     position: relative;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     img {
         width: 162px;
         padding: 18px 111px 5px 107px;
     }
 }
+
 .location{
         background: #EAEAEA;;
         display: flex;
@@ -53,22 +54,9 @@ body {
         margin: 0;
     }
     button {
-        width: 218px;
-        height: 50px;
-        border-radius: 25px;
-        border: none;
-        background: linear-gradient(-15deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 83%);
-        margin: 27px 0 60px 0;
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-        }
+        @include btn;
     }
 }
-
-
 
 .fonction {
     display: flex;
@@ -78,10 +66,8 @@ body {
     width: 100%;
     height: 440px;
     h2 {
-        font-size: 24px;
-        font-weight: 700;
-        padding-top: 48px;
-        margin: 0 180px 0 20px;
+    @include title__section;
+    margin: 0 180px 0 20px;
     }
     .fonction__box {
         position: relative;
@@ -96,6 +82,9 @@ body {
         border-radius: 20px;
         font-size: 16px;
         font-weight: 500;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 150ms;
         .fonction__box--pin {
             position: absolute;
             right: 312px;
@@ -118,6 +107,40 @@ body {
         &:hover {
             background: #F5EDFF;
             color: #9356DC;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+            transform: scale(1.02);
         }
+    }
+}
+
+.restaurants {
+    width: 100%;
+    background: #fafafa;
+    h2 {
+    @include title__section;
+    margin-left: 20px;
+    }
+}
+.container__card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    article {
+        width: 90%;
+        height: 251px;
+        border-radius: 25px;
+        background: #FFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        img {
+            width: 100%;
+            height: 174px;
+            border-radius: 25px 25px 0 0;
+            object-fit: cover;
+        }
+
+
     }
 }
