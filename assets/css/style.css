@@ -158,6 +158,12 @@ body {
   border-radius: 25px;
   background: #FFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 150ms;
+}
+.card__resto:hover {
+  transform: scale(1.01);
 }
 .card__resto .card__resto--img {
   width: 100%;
@@ -197,6 +203,11 @@ body {
   bottom: 27px;
   font-size: 26px;
   color: red;
+}
+.card__resto .card__resto--new {
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
