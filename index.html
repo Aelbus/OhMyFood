@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     
 <head>
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
         <div class="prez">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="btn-pink"><a href="#">Explorer nos restaurants</a></button>
+            <a class="btn" href="#restaurants">Explorer nos restaurants</a>
         </div>
 
         <div class="fonction">
@@ -51,28 +51,46 @@
             </div>
         </div>
 
-        <section class="restaurants">
+        <section id="restaurants">
             <h2>Restaurants</h2>
-            <div class="container__card">
-                <article>
-                    <img src="images/restaurants/la_palette_du_gout.jpg" alt="restaurant La Palette du Gôut">
-                    <h3>test</h3>
-                    <p>test</p>
+            <div class="container__card__resto">
+                <article class="card__resto">
+                    <img src="images/restaurants/la_palette_du_gout.jpg" alt="restaurant La Palette du Gôut" class="card__resto--img">
+                    <img src="" alt="">
+                    <div class="card__resto--info">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                        <i class="card--heart fa-regular fa-heart heart"></i>
+                        <i class="card--heart--full fa-solid fa-heart"></i>
+                    </div>
+
                 </article>
-                <article>
-                    <img src="images/restaurants/la_note_enchantee.jpg" alt="restaurant La Note Enchantée">
-                    <h3>test</h3>
-                    <p>test</p>
+                <article class="card__resto">
+                    <img src="images/restaurants/la_note_enchantee.jpg" alt="restaurant La Note Enchantée" class="card__resto--img">
+                    <div class="card__resto--info">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        <i class="card--heart fa-regular fa-heart heart"></i>
+                        <i class="card--heart--full fa-solid fa-heart"></i>
+                    </div>
                 </article>
-                <article>
-                    <img src="images/restaurants/a_la_francaise.jpg" alt="restaurant À la Française">
-                    <h3>test</h3>
-                    <p>test</p>
+                <article class="card__resto">
+                    <img src="images/restaurants/a_la_francaise.jpg" alt="restaurant À la Française" class="card__resto--img">
+                    <div class="card__resto--info">
+                        <h3>À la Française</h3>
+                        <p>Cité Rouge</p>
+                        <i class="card--heart fa-regular fa-heart heart"></i>
+                        <i class="card--heart--full fa-solid fa-heart"></i>
+                    </div>
                 </article>
-                <article>
-                    <img src="images/restaurants/le_delice_des_sens.jpg" alt="restaurant Le Délice des sens">
-                    <h3>test</h3>
-                    <p>test</p>
+                <article class="card__resto">
+                    <img src="images/restaurants/le_delice_des_sens.jpg" alt="restaurant Le Délice des sens" class="card__resto--img">
+                    <div class="card__resto--info">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <i class="card--heart fa-regular fa-heart heart"></i>
+                        <i class="card--heart--full fa-solid fa-heart"></i>
+                   </div>
                 </article>
             </div>
         </section>
