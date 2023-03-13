@@ -56,7 +56,17 @@ body ul {
 }
 .prez button {
   width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(-15deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 83%);
+  margin: 27px 0 60px 0;
+}
+.prez button a {
   text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .fonction {
@@ -89,7 +99,7 @@ body ul {
 }
 .fonction .fonction__box .fonction__box--pin {
   position: absolute;
-  right: 310px;
+  right: 312px;
   border-radius: 100%;
   padding: 8px 12px 6px 11px;
   line-height: 17px;
@@ -99,9 +109,16 @@ body ul {
 .fonction .fonction__box .fonction__box--ico {
   position: absolute;
   right: 273px;
+  width: 20px;
+  height: 20px;
   font-size: 16px;
   line-height: 17px;
+  text-align: center;
   color: #7E7E7E;
+}
+.fonction .fonction__box:hover {
+  background: #F5EDFF;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
