@@ -1,5 +1,6 @@
 @import "components/buttons";
 @import "utils/mixins";
+@import "base/typography";
 
 body {
     width: 375px;
@@ -143,8 +144,10 @@ body {
     transform: scale(1);
     transition-property: transform;
     transition-duration: 150ms;
+    text-decoration: none;
+    color: black;
     &:hover {
-        transform: scale(1.01);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     }
     .card__resto--img {
         width: 100%;
@@ -196,6 +199,7 @@ body {
 }
 
 footer {
+    position: relative;
     width: 100%;
     height: auto;
     background: #353535;
@@ -224,6 +228,52 @@ footer {
                 text-align: left;
                 width: 32px;
             }
+        }
+    }
+}
+
+
+/* ------Menu pages------ */
+.img__menu {
+    width: 100%;
+    object-fit: cover;
+}
+article {
+    padding-top: 32px;
+    border-radius: 25px 25px 0 0;
+    background: #fafafa;
+    .container__menu--title {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 17px;
+        h1 {
+            font-family: 'Shrikhand';
+            margin: 0;
+        }
+        img {
+            padding-right: 24px;
+        }
+    }
+
+}
+.container__menu--section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 25px 13px 40px 13px;
+    .entrees {
+        h2 {
+            @include title__menu__section;
+        }
+    }
+    .plats {
+        h2 {
+            @include title__menu__section;
+        }
+    }
+    .desserts {
+        h2 {
+            @include title__menu__section;
         }
     }
 }
