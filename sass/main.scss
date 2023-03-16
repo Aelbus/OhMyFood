@@ -238,7 +238,9 @@ footer {
     width: 100%;
     object-fit: cover;
 }
-article {
+.container__menu {
+    position: relative;
+    margin-top: -32px;
     padding-top: 32px;
     border-radius: 25px 25px 0 0;
     background: #fafafa;
@@ -254,50 +256,56 @@ article {
             padding-right: 24px;
         }
     }
-
-}
-.container__menu--section {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 25px 13px 40px 13px;
-    .type {
-        h2 {
-            @include title__menu__section;
-        }
-        .card__menu {
-            margin: 0 0 12px 0;
-            background: #FFF;
-            border-radius: 25px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-            padding: 12px 10px;
-            text-decoration: none;
-            display: flex;
-            .card__menu--title {
-                width: 80%;
-                justify-content: center;
-                display: flex;
-                flex-direction: column;
-                h3 {
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin: 0;
-                }
-                p {
-                    font-size: 15px;
-                    font-weight: 300;
-                    margin: 0;
-                }
+    .container__menu--section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 25px 13px 0 13px;
+        .type {
+            h2 {
+                @include title__menu__section;
             }
-            .card__menu--price {
-                width: 20%;
-                text-align: center;
-                padding-top: 23px;
-                font-size: 15px;
-                font-weight: 700;
-                line-height: 18px;
+            .card__menu {
+                margin: 0 0 12px 0;
+                background: #FFF;
+                border-radius: 25px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+                padding: 12px 10px;
+                text-decoration: none;
+                display: flex;
+                .card__menu--title {
+                    width: 85%;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 15px;
+                        font-weight: 300;
+                        margin: 0;
+                    }
+                }
+                .card__menu--price {
+                    width: 15%;
+                    text-align: center;
+                    padding-top: 23px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                }
             }
         }
     }
-
+    .container__menu--btn {
+        display: flex;
+        justify-content: center;
+        .btn {
+            @include btn-pink;
+        }
+    }
 }
+

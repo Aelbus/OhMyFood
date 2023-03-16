@@ -262,31 +262,32 @@ footer .footer__info a i {
   object-fit: cover;
 }
 
-article {
+.container__menu {
+  position: relative;
+  margin-top: -32px;
   padding-top: 32px;
   border-radius: 25px 25px 0 0;
   background: #fafafa;
 }
-article .container__menu--title {
+.container__menu .container__menu--title {
   display: flex;
   justify-content: space-between;
   margin: 0 17px;
 }
-article .container__menu--title h1 {
+.container__menu .container__menu--title h1 {
   font-family: "Shrikhand";
   margin: 0;
 }
-article .container__menu--title img {
+.container__menu .container__menu--title img {
   padding-right: 24px;
 }
-
-.container__menu--section {
+.container__menu .container__menu--section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 25px 13px 40px 13px;
+  margin: 25px 13px 0 13px;
 }
-.container__menu--section .type h2 {
+.container__menu .container__menu--section .type h2 {
   width: 40px;
   font-size: 16px;
   font-weight: 300;
@@ -294,7 +295,7 @@ article .container__menu--title img {
   padding-bottom: 10px;
   border-bottom: 3px solid #99E2D0;
 }
-.container__menu--section .type .card__menu {
+.container__menu .container__menu--section .type .card__menu {
   margin: 0 0 12px 0;
   background: #FFF;
   border-radius: 25px;
@@ -303,29 +304,57 @@ article .container__menu--title img {
   text-decoration: none;
   display: flex;
 }
-.container__menu--section .type .card__menu .card__menu--title {
-  width: 80%;
+.container__menu .container__menu--section .type .card__menu .card__menu--title {
+  width: 85%;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
-.container__menu--section .type .card__menu .card__menu--title h3 {
+.container__menu .container__menu--section .type .card__menu .card__menu--title h3 {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
 }
-.container__menu--section .type .card__menu .card__menu--title p {
+.container__menu .container__menu--section .type .card__menu .card__menu--title p {
   font-size: 15px;
   font-weight: 300;
   margin: 0;
 }
-.container__menu--section .type .card__menu .card__menu--price {
-  width: 20%;
+.container__menu .container__menu--section .type .card__menu .card__menu--price {
+  width: 15%;
   text-align: center;
   padding-top: 23px;
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
+}
+.container__menu .container__menu--btn {
+  display: flex;
+  justify-content: center;
+}
+.container__menu .container__menu--btn .btn {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(-15deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 83%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin: 27px 0 60px 0;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 200ms;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.container__menu .container__menu--btn .btn:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01);
+  filter: brightness(115%);
 }
 
 /*# sourceMappingURL=style.css.map */
