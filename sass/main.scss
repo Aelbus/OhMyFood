@@ -17,6 +17,9 @@ body {
         width: 162px;
         padding: 18px 111px 5px 107px;
     }
+    .back-btn {
+        @include btn-back;
+    }
 }
 
 .location{
@@ -234,6 +237,8 @@ footer {
 
 
 /* ------Menu pages------ */
+
+
 .img__menu {
     width: 100%;
     object-fit: cover;
