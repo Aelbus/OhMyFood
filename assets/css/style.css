@@ -273,12 +273,13 @@ footer .footer__info a i {
 /* ------Menu pages------ */
 .img__menu {
   width: 100%;
+  height: 275px;
   object-fit: cover;
 }
 
 .container__menu {
   position: relative;
-  margin-top: -32px;
+  margin-top: -41px;
   padding-top: 32px;
   border-radius: 25px 25px 0 0;
   background: #fafafa;
@@ -319,7 +320,7 @@ footer .footer__info a i {
   display: flex;
 }
 .container__menu .container__menu--section .type .card__menu .card__menu--title {
-  width: 85%;
+  width: 88%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -335,7 +336,7 @@ footer .footer__info a i {
   margin: 0;
 }
 .container__menu .container__menu--section .type .card__menu .card__menu--price {
-  width: 15%;
+  width: 12%;
   text-align: center;
   padding-top: 23px;
   font-size: 15px;
