@@ -1,3 +1,5 @@
+
+// - TITRES - //
 @mixin title__section {
     font-size: 24px;
     font-weight: 700;
@@ -10,4 +12,44 @@
     line-height: 19px;
     padding-bottom: 10px;
     border-bottom: 3px solid #99E2D0;
+}
+
+// - BOUTONS - //
+@mixin btn-pink {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(-15deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 83%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    margin: 27px 0 60px 0;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    &:hover {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+        transform: scale(1.01);
+        filter: brightness(115%);
+    }
+}
+@mixin btn-back {
+    position: relative;
+    top: -37px;
+    left: 23px;
+    width: 30px;
+    text-align: center;
+    font-size: 23px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
+    &:hover {
+        transform: scale(1.3);
+    }
 }
