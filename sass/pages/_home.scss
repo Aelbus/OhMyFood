@@ -1,5 +1,5 @@
 .prez {
-    background: #fafafa;
+    background: $color_5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@
             padding: 8px 12px 6px 11px;
             line-height: 17px;
             color: white;
-            background: #9356DC;
+            background: $color_1;
         }
         .fonction__box--ico{
             position: absolute;
@@ -72,7 +72,7 @@
         }
         &:hover {
             background: #F5EDFF;
-            color: #9356DC;
+            color: $color_1;
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
             transform: scale(1.02);
         }

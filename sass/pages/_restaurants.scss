@@ -8,13 +8,13 @@
     margin-top: -41px;
     padding-top: 32px;
     border-radius: 25px 25px 0 0;
-    background: #fafafa;
+    background: $color_5;
     .container__menu--title {
         display: flex;
         justify-content: space-between;
         margin: 0 17px;
         h1 {
-            font-family: 'Shrikhand';
+            font-family: $font_2;
             margin: 0;
         }
         img {
