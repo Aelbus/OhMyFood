@@ -156,8 +156,9 @@
         filter: drop-shadow(0 0 2px crimson);
     }
     .card__resto--new {
+        @include new;
         position: absolute;
-        right: 13px;
-        top: 13px;
+        right: 16px;
+        top: 3px
     }
 }

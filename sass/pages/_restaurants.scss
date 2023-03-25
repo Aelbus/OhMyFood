@@ -35,7 +35,6 @@
                 background: #FFF;
                 border-radius: 25px;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-                padding: 12px 10px;
                 text-decoration: none;
                 display: flex;
                 .card__menu--title {
@@ -43,26 +42,43 @@
                     justify-content: center;
                     display: flex;
                     flex-direction: column;
+                    padding: 12px 0 12px 10px;
                     h3 {
                         font-size: 18px;
                         font-weight: 500;
                         margin: 0;
+                        text-overflow: ellipsis;
                     }
                     p {
                         font-size: 15px;
                         font-weight: 300;
                         margin: 0;
+                        white-space : nowrap;
                     }
                 }
                 .card__menu--price {
                     width: 12%;
-                    text-align: center;
-                    padding-top: 23px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
                     font-size: 15px;
                     font-weight: 700;
                     line-height: 18px;
+                    padding: 12px 0px;
+                    white-space : nowrap;
+                    text-overflow: ellipsis;
+                }
+                .checked {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $color_3;
+                    border-radius: 0 25px 25px 0;
+                    color: #FFF;
+                    font-size: 20px;
                 }
             }
+
         }
     }
     .container__menu--btn {
