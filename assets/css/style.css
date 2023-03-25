@@ -277,8 +277,9 @@ footer .footer__info a i {
   font-size: 14px;
   font-weight: 500;
   position: absolute;
-  right: 16px;
-  top: 3px;
+  margin: 0;
+  right: 15px;
+  top: 15px;
 }
 
 .img__menu {

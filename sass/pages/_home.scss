@@ -158,7 +158,8 @@
     .card__resto--new {
         @include new;
         position: absolute;
-        right: 16px;
-        top: 3px
+        margin: 0;
+        right: 15px;
+        top: 15px
     }
 }
