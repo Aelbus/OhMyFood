@@ -11,14 +11,40 @@
     background: $color_5;
     .container__menu--title {
         display: flex;
-        justify-content: space-between;
         margin: 0 17px;
+        position: relative;
         h1 {
             font-family: $font_2;
             margin: 0;
         }
-        img {
-            padding-right: 24px;
+        .heart {
+            .card--heart {
+                z-index: 1;
+                position: absolute;
+                font-size: 28px;
+                right: 5px;
+                bottom: 2px;
+                &:hover {
+                    background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
+                    background-clip: border-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &:active + .card--heart--full {
+                    z-index: 1;
+                }
+            }       
+            .card--heart--full {
+                z-index: 0;
+                position: absolute;
+                font-size: 28px;
+                right: 5px;
+                bottom: 2px;
+                background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
     .container__menu--section {

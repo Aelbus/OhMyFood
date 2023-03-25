@@ -99,6 +99,7 @@
     
 }
 .card__resto {
+    z-index: 1;
     position: relative;
     width: 90%;
     height: 251px;
@@ -138,28 +139,40 @@
             padding-top: 5px;
         }
     }
-    .card--heart {
-        position: absolute;
-        object-position: right;
-        right: 25px;
-        bottom: 27px;
-        font-size: 26px;
-    }
-    .card--heart--full {
-        position: absolute;
-        object-position: right;
-        right: 25px;
-        bottom: 27px;
-        font-size: 26px;
-        color: red;
-        visibility: hidden;
-        filter: drop-shadow(0 0 2px crimson);
-    }
     .card__resto--new {
         @include new;
         position: absolute;
         margin: 0;
         right: 15px;
         top: 15px
+    }
+}
+.heart {
+    .card--heart {
+        z-index: 1;
+        position: absolute;
+        font-size: 28px;
+        right: 25px;
+        bottom: 25px;
+        &:hover {
+            background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:active + .card--heart--full {
+            z-index: 1;
+        }
+    }       
+    .card--heart--full {
+        z-index: -1;
+        position: absolute;
+        font-size: 28px;
+        right: 25px;
+        bottom: 25px;
+        background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

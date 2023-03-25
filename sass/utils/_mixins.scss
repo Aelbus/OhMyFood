@@ -1,10 +1,12 @@
 
 // - TITRES - //
+
 @mixin title__section {
     font-size: 24px;
     font-weight: 700;
     padding-top: 48px;
 }
+
 @mixin title__menu__section {
     width: 40px;
     font-size: 16px;
@@ -15,6 +17,7 @@
 }
 
 // - BOUTONS - //
+
 @mixin btn-pink {
     width: 218px;
     height: 50px;
@@ -53,6 +56,10 @@
         transform: scale(1.3);
     }
 }
+
+
+// - Indication Nouveau Restaurant - //
+
 @mixin new {
     background: $color_3;
     color: darken($color: $color_3, $amount: 40);
@@ -65,4 +72,7 @@
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
- }
+
+}
+
+//- COEUR - //
