@@ -90,6 +90,7 @@
     }
 }
 .container__card__resto {
+
     width: 100%;
     height: auto;
     display: flex;
@@ -121,6 +122,8 @@
         width: 80%;
         height: 77px;
         margin: 12px 0 0 13px ;
+        text-decoration: none;
+        font-style: $font_1;
         h3 {
             font-size: 18px;
             font-weight: 700;
@@ -128,6 +131,7 @@
             margin: 0;
         }
         p {
+
             font-size: 17px;
             font-weight: 300;
             line-height: 20px;
@@ -136,13 +140,4 @@
         }
     }
 
-}
-.heart {
-    .card--heart--full {
-        z-index: 0;
-        position: absolute;
-        font-size: 24px;
-        right: 25px;
-        bottom: 25px;
-    }
 }

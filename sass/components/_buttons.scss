@@ -1,23 +1,41 @@
 // - COEUR - //
 
-.heart {
-    .card--heart--full {
-        background: #FFF;
-        background-clip: border-box;
-        -webkit-background-clip: text;
+.heart__container {
+    & i {
+        position: absolute;
+        font-size: 28px;
+        bottom: 23px;
+        right: 12px;
+        font-size: 28px;
+        transition: all 400ms ease-in-out;
+    }
+    & .heart_full {
+        background-image: $gradient;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px black;
-        cursor: pointer;
-        outline: none;
-        border: none;
-            
-        &:active,
-        &:focus {
-        background: $gradient;
-        background-clip: border-box;
         -webkit-background-clip: text;
+        opacity: 0;
+    }
+    &:active .heart_full {
+        opacity: 1;
+    }
+}
+
+.heart__container_card {
+    & i {
+        position: absolute;
+        font-size: 28px;
+        bottom: 25px;
+        right: 25px;
+        font-size: 28px;
+        transition: all 400ms ease-in-out;
+    }
+    & .heart_full {
+        background-image: $gradient;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0;
-        }
+        -webkit-background-clip: text;
+        opacity: 0;
+    }
+    &:active .heart_full {
+        opacity: 1;
     }
 }

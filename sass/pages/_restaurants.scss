@@ -17,32 +17,11 @@
             font-family: $font_2;
             margin: 0;
         }
-        .heart {
-            .card--heart--full {
-              z-index: 0;
-              position: absolute;
-              font-size: 28px;
-              right: 5px;
-              bottom: 2px;
-              background: #FFF;
-              background-clip: border-box;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              -webkit-text-stroke: 2.5px black;
-              cursor: pointer;
-              outline: none;
-              border: none;
-                 
-              &:active,
-              &:focus {
-                background: $gradient;
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -webkit-text-stroke: 0;
-              }
-            }
-          }
+        .heart__container {
+            position: absolute;
+            right: 0;
+            top: 55px;
+        }
     }
     .container__menu--section {
         display: flex;
