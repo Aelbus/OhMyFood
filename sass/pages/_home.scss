@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     h1 {
-        width: 275px;
         font-size: 24px;
         font-weight: 700;
         line-height: 28px;
@@ -82,8 +81,9 @@
 
 #restaurants {
     width: 100%;
-    height: 1300px;
+    height: auto;
     background: #fafafa;
+    padding-bottom: 64px;
     h2 {
     @include title__section;
     margin-left: 20px;
@@ -99,16 +99,13 @@
     
 }
 .card__resto {
-    z-index: 1;
+    z-index: 0;
     position: relative;
     width: 90%;
     height: 251px;
     border-radius: 25px;
     background: #FFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 150ms;
     text-decoration: none;
     color: black;
     &:hover {
@@ -117,11 +114,10 @@
     .card__resto--img {
         width: 100%;
         height: 174px;
-         border-radius: 25px 25px 0 0;
+        border-radius: 25px 25px 0 0;
         object-fit: cover;
     }
     .card__resto--info {
-
         width: 80%;
         height: 77px;
         margin: 12px 0 0 13px ;
@@ -139,40 +135,14 @@
             padding-top: 5px;
         }
     }
-    .card__resto--new {
-        @include new;
-        position: absolute;
-        margin: 0;
-        right: 15px;
-        top: 15px
-    }
+
 }
 .heart {
-    .card--heart {
-        z-index: 1;
-        position: absolute;
-        font-size: 28px;
-        right: 25px;
-        bottom: 25px;
-        &:hover {
-            background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
-            background-clip: border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        &:active + .card--heart--full {
-            z-index: 1;
-        }
-    }       
     .card--heart--full {
-        z-index: -1;
+        z-index: 0;
         position: absolute;
-        font-size: 28px;
+        font-size: 24px;
         right: 25px;
         bottom: 25px;
-        background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 }

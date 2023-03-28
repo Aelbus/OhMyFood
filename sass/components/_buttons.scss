@@ -1,0 +1,23 @@
+// - COEUR - //
+
+.heart {
+    .card--heart--full {
+        background: #FFF;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px black;
+        cursor: pointer;
+        outline: none;
+        border: none;
+            
+        &:active,
+        &:focus {
+        background: $gradient;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0;
+        }
+    }
+}

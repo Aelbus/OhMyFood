@@ -2,8 +2,10 @@
 @import "utils/mixins";
 @import "base/reset";
 @import "base/typography";
+@import "components/new";
+@import "components/buttons";
 @import "layout/header";
 @import "layout/footer";
 @import "pages/home";
 @import "pages/restaurants";
-@import "components/buttons";
+

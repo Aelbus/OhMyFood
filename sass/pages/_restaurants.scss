@@ -18,34 +18,31 @@
             margin: 0;
         }
         .heart {
-            .card--heart {
-                z-index: 1;
-                position: absolute;
-                font-size: 28px;
-                right: 5px;
-                bottom: 2px;
-                &:hover {
-                    background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-                &:active + .card--heart--full {
-                    z-index: 1;
-                }
-            }       
             .card--heart--full {
-                z-index: 0;
-                position: absolute;
-                font-size: 28px;
-                right: 5px;
-                bottom: 2px;
-                background: linear-gradient(190deg, $color_1 0%, $color_2 83%);
+              z-index: 0;
+              position: absolute;
+              font-size: 28px;
+              right: 5px;
+              bottom: 2px;
+              background: #FFF;
+              background-clip: border-box;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              -webkit-text-stroke: 2.5px black;
+              cursor: pointer;
+              outline: none;
+              border: none;
+                 
+              &:active,
+              &:focus {
+                background: $gradient;
                 background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 0;
+              }
             }
-        }
+          }
     }
     .container__menu--section {
         display: flex;

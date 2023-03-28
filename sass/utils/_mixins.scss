@@ -19,11 +19,11 @@
 // - BOUTONS - //
 
 @mixin btn-pink {
-    width: 218px;
-    height: 50px;
+    width: 60%;
+    height: 30%;
     border-radius: 25px;
     border: none;
-    background: linear-gradient(-15deg, $color_1 0%, $color_2 83%);
+    background: $gradient;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     margin: 27px 0 60px 0;
     transform: scale(1);
@@ -42,6 +42,7 @@
         filter: brightness(105%);
     }
 }
+
 @mixin btn-back {
     position: relative;
     top: -37px;
@@ -58,21 +59,5 @@
 }
 
 
-// - Indication Nouveau Restaurant - //
-
-@mixin new {
-    background: $color_3;
-    color: darken($color: $color_3, $amount: 40);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: 2px 2px 2px 2px;
-    width: 80px;
-    height: 29px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 500;
-
-}
 
 //- COEUR - //

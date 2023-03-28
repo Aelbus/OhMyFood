@@ -28,6 +28,13 @@ footer {
                 text-align: left;
                 width: 32px;
             }
+            &:hover{
+                background: darken($color: $color_5, $amount: 0.2);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
+
     }
 }

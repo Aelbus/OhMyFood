@@ -1,0 +1,17 @@
+.card__resto--new {
+    background: $color_3;
+    color: darken($color: $color_3, $amount: 40);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2px 2px 2px 2px;
+    width: 80px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    margin: 0;
+    right: 15px;
+    top: 15px
+}
