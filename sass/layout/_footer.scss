@@ -2,7 +2,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    background: #353535;
+    background: $color_background;
     display: flex;
     flex-direction: column;
     img {
@@ -29,7 +29,7 @@ footer {
                 width: 32px;
             }
             &:hover{
-                background: darken($color: $color_5, $amount: 0.2);
+                background: darken($color: #FFF, $amount: 0.2);
                 background-clip: border-box;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

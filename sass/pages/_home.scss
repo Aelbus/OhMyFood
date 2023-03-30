@@ -1,5 +1,5 @@
 .prez {
-    background: $color_5;
+    background: $color_background_bis;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@
             padding: 8px 12px 6px 11px;
             line-height: 17px;
             color: white;
-            background: $color_1;
+            background: $color_primary;
         }
         .fonction__box--ico{
             position: absolute;
@@ -71,7 +71,7 @@
         }
         &:hover {
             background: #F5EDFF;
-            color: $color_1;
+            color: $color_primary;
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
             transform: scale(1.02);
         }
@@ -123,7 +123,7 @@
         height: 77px;
         margin: 12px 0 0 13px ;
         text-decoration: none;
-        font-style: $font_1;
+        font-style: $font_primary;
         h3 {
             font-size: 18px;
             font-weight: 700;

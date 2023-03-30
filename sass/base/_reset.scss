@@ -1,9 +1,10 @@
 body {
     width: 375px;
     margin: auto;
-    font-family: $font_1, sans-serif;
+    font-family: $font_primary, sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }

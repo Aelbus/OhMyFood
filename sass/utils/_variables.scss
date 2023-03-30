@@ -1,11 +1,11 @@
 // - COULEUR - //
-$color_1: #9356DC;
-$color_2: #FF79DA;
-$color_3: #99E2D0;
-$color_4: #353535;
-$color_5: #fafafa;
-$gradient: linear-gradient(190deg, $color_1 0%, $color_2 70%);
+$color_primary: #9356DC;
+$color_secondary: #FF79DA;
+$color_tertiary: #99E2D0;
+$color_background: #353535;
+$color_background_bis: #fafafa;
+$gradient: linear-gradient(190deg, $color_primary 0%, $color_secondary 70%);
 
 // - FONTS - //
-$font_1: "Roboto";
-$font_2: "Shrikhand";
+$font_primary: "Roboto";
+$font_secondary: "Shrikhand";
