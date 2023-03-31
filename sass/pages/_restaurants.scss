@@ -1,15 +1,15 @@
-.img__menu {
+.img_menu {
     width: 100%;
     height: 275px;
     object-fit: cover;
 }
-.container__menu {
+.container_menu {
     position: relative;
     margin-top: -41px;
     padding-top: 32px;
     border-radius: 25px 25px 0 0;
     background: $color_background_bis;
-    .container__menu--title {
+    .container_menu_title {
         display: flex;
         margin: 0 17px;
         position: relative;
@@ -17,29 +17,25 @@
             font-family: $font_secondary;
             margin: 0;
         }
-        .heart__container {
-            position: absolute;
-            right: 0;
-            top: 55px;
-        }
     }
-    .container__menu--section {
+    .container_menu_section {
         display: flex;
         flex-direction: column;
         gap: 40px;
         margin: 25px 13px 0 13px;
+
         .type {
             h2 {
                 @include title__menu__section;
             }
-            .card__menu {
+            .card_menu {
                 margin: 0 0 12px 0;
                 background: #FFF;
                 border-radius: 25px;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
                 text-decoration: none;
                 display: flex;
-                .card__menu--title {
+                .card_menu_title {
                     width: 88%;
                     justify-content: center;
                     display: flex;
@@ -58,7 +54,7 @@
                         white-space : nowrap;
                     }
                 }
-                .card__menu--price {
+                .card_menu_price {
                     width: 12%;
                     display: flex;
                     justify-content: center;
@@ -83,11 +79,9 @@
 
         }
     }
-    .container__menu--btn {
+    .container_menu_btn {
         display: flex;
         justify-content: center;
-        .btn {
-            @include btn-pink;
-        }
+
     }
 }
