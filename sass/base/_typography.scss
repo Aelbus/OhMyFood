@@ -1,4 +1,93 @@
-a:visited{
-    text-decoration: none;
-    color: black;
+// - HOME - //
+.location {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    .fa-location-dot{
+        font-size: 18px;
+    }
+}
+
+.prez {
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+}
+
+.fonction {
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+.fonction_box {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#restaurants {
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+.card_resto_info {
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+    p {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+}
+
+// - RESTAURANT PAGE - //
+.container_menu_title {
+    h1 {
+        font-family: $font_secondary;
+    }
+}
+.type {
+    h2 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+}
+.card_menu_title {
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+.card_menu_price {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.checked {
+    font-size: 20px;
+}
+
+// - FOOTER - //
+.footer_info {
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+    }
 }

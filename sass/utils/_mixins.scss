@@ -1,17 +1,1 @@
 
-// - TITRES - //
-
-@mixin title__section {
-    font-size: 24px;
-    font-weight: 700;
-    padding-top: 48px;
-}
-
-@mixin title__menu__section {
-    width: 40px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 19px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid $color_tertiary;
-}

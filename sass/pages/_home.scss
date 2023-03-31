@@ -4,73 +4,62 @@
     flex-direction: column;
     align-items: center;
     h1 {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 28px;
         text-align: center;
         padding: 39px 50px 20px 50px;
-        margin: 0;
     }
     p {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 21px;
         text-align: center;
-        margin: 0;
     }
 }
 
+.fonction_title {
+        padding-top: 48px 0 20px 0;
+        margin:48px 0 20px 20px;
+}
 .fonction {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
     width: 100%;
-    height: 440px;
-    h2 {
-    @include title__section;
-    margin: 0 180px 0 20px;
+    height: auto;
+    margin-bottom: 68px;
+}
+.fonction_box {
+    position: relative;
+    width: 330px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 150ms;
+    .fonction_box_pin {
+        position: absolute;
+        right: 312px;
+        border-radius: 100%;
+        padding: 8px 12px 6px 11px;
+        color: white;
+        background: $color_primary;
     }
-    .fonction_box {
-        position: relative;
-        margin-left: 7px;
-        width: 330px;
-        height: 73px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #F7F7F7;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        font-size: 16px;
-        font-weight: 500;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 150ms;
-        .fonction_box_pin {
-            position: absolute;
-            right: 312px;
-            border-radius: 100%;
-            padding: 8px 12px 6px 11px;
-            line-height: 17px;
-            color: white;
-            background: $color_primary;
-        }
-        .fonction_box_ico{
-            position: absolute;
-            right: 273px;
-            width: 20px;
-            height: 20px;
-            font-size: 16px;
-            line-height: 17px;
-            text-align: center;
-            color: #7E7E7E;
-        }
-        &:hover {
-            background: #F5EDFF;
+    .fonction_box_ico{
+        position: absolute;
+        right: 273px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: #7E7E7E;
+    }
+    &:hover {
+        background: #F5EDFF;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+        transform: scale(1.02);
+        .fonction_box_ico {
             color: $color_primary;
-            box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
-            transform: scale(1.02);
         }
     }
 }
@@ -82,8 +71,8 @@
     background: #fafafa;
     padding-bottom: 64px;
     h2 {
-    @include title__section;
-    margin-left: 20px;
+        padding: 48px 0 20px 0;
+        margin-left: 20px;
     }
 }
 .container_card_resto {
@@ -96,7 +85,6 @@
     
 }
 .card_resto {
-    z-index: 0;
     position: relative;
     width: 90%;
     height: 251px;
@@ -116,24 +104,20 @@
     }
     .card_resto_info {
         width: 80%;
-        height: 77px;
-        margin: 12px 0 0 13px ;
+        height: auto;
+        padding: 12px 0 0 13px ;
         text-decoration: none;
         font-style: $font_primary;
-        h3 {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 21px;
+        h3, p {
             margin: 0;
-        }
-        p {
-
-            font-size: 17px;
-            font-weight: 300;
-            line-height: 20px;
-            margin: 0;
-            padding-top: 5px;
         }
     }
 
+}
+.heart_home {
+    & i {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    }
 }

@@ -10,17 +10,12 @@
         width: 162px;
     }
 }
-
 .location{
-        background: #EAEAEA;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        .fa-location-dot{
-            font-size: 18px;
-            padding: 16px 17px 18px 0;
-        }
+    background: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-location-dot{
+        padding: 16px 17px 18px 0;
+    }
 }

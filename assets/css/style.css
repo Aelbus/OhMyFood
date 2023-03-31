@@ -9,9 +9,89 @@ a {
   color: black;
 }
 
-a:visited {
-  text-decoration: none;
-  color: black;
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.location {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.location .fa-location-dot {
+  font-size: 18px;
+}
+
+.prez h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.prez p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.fonction h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fonction_box {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#restaurants h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card_resto_info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.card_resto_info p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.container_menu_title h1 {
+  font-family: "Shrikhand";
+}
+
+.type h2 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.card_menu_title h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card_menu_title p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card_menu_price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.checked {
+  font-size: 20px;
+}
+
+.footer_info a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
 }
 
 .card_resto_new {
@@ -47,21 +127,11 @@ a:visited {
   opacity: 1;
 }
 
-.heart_home i {
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-}
-
-.heart_page i {
-  position: absolute;
-  bottom: 3px;
-  right: 12px;
-}
-
 .btn {
+  display: block;
   width: 218px;
   height: 50px;
+  color: #fff;
   border-radius: 25px;
   border: none;
   background: linear-gradient(190deg, #9356DC 0%, #FF79DA 70%);
@@ -70,7 +140,6 @@ a:visited {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 200ms;
-  color: #fff;
   text-align: center;
   font-size: 16px;
   line-height: 50px;
@@ -84,11 +153,9 @@ a:visited {
 }
 
 .back_btn {
-  position: relative;
+  position: absolute;
+  top: 18px;
   left: 35px;
-  top: -44px;
-  width: 30px;
-  text-align: center;
   font-size: 23px;
   transform: scale(1);
   transition-property: transform;
@@ -116,12 +183,8 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
 }
 .location .fa-location-dot {
-  font-size: 18px;
   padding: 16px 17px 18px 0;
 }
 
@@ -149,9 +212,6 @@ footer .footer_info {
 footer .footer_info a {
   text-decoration: none;
   color: #FFF;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
   gap: 7px;
 }
 footer .footer_info a i {
@@ -172,19 +232,16 @@ footer .footer_info a:hover {
   align-items: center;
 }
 .prez h1 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
   text-align: center;
   padding: 39px 50px 20px 50px;
-  margin: 0;
 }
 .prez p {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 21px;
   text-align: center;
-  margin: 0;
+}
+
+.fonction_title {
+  padding-top: 48px 0 20px 0;
+  margin: 48px 0 20px 20px;
 }
 
 .fonction {
@@ -193,17 +250,12 @@ footer .footer_info a:hover {
   align-items: center;
   gap: 25px;
   width: 100%;
-  height: 440px;
+  height: auto;
+  margin-bottom: 68px;
 }
-.fonction h2 {
-  font-size: 24px;
-  font-weight: 700;
-  padding-top: 48px;
-  margin: 0 180px 0 20px;
-}
-.fonction .fonction_box {
+
+.fonction_box {
   position: relative;
-  margin-left: 7px;
   width: 330px;
   height: 73px;
   display: flex;
@@ -212,36 +264,33 @@ footer .footer_info a:hover {
   background: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  font-size: 16px;
-  font-weight: 500;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 150ms;
 }
-.fonction .fonction_box .fonction_box_pin {
+.fonction_box .fonction_box_pin {
   position: absolute;
   right: 312px;
   border-radius: 100%;
   padding: 8px 12px 6px 11px;
-  line-height: 17px;
   color: white;
   background: #9356DC;
 }
-.fonction .fonction_box .fonction_box_ico {
+.fonction_box .fonction_box_ico {
   position: absolute;
   right: 273px;
   width: 20px;
   height: 20px;
-  font-size: 16px;
-  line-height: 17px;
   text-align: center;
   color: #7E7E7E;
 }
-.fonction .fonction_box:hover {
+.fonction_box:hover {
   background: #F5EDFF;
-  color: #9356DC;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
   transform: scale(1.02);
+}
+.fonction_box:hover .fonction_box_ico {
+  color: #9356DC;
 }
 
 #restaurants {
@@ -251,9 +300,7 @@ footer .footer_info a:hover {
   padding-bottom: 64px;
 }
 #restaurants h2 {
-  font-size: 24px;
-  font-weight: 700;
-  padding-top: 48px;
+  padding: 48px 0 20px 0;
   margin-left: 20px;
 }
 
@@ -267,7 +314,6 @@ footer .footer_info a:hover {
 }
 
 .card_resto {
-  z-index: 0;
   position: relative;
   width: 90%;
   height: 251px;
@@ -288,28 +334,24 @@ footer .footer_info a:hover {
 }
 .card_resto .card_resto_info {
   width: 80%;
-  height: 77px;
-  margin: 12px 0 0 13px;
+  height: auto;
+  padding: 12px 0 0 13px;
   text-decoration: none;
   font-style: "Roboto";
 }
-.card_resto .card_resto_info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
+.card_resto .card_resto_info h3, .card_resto .card_resto_info p {
   margin: 0;
 }
-.card_resto .card_resto_info p {
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 20px;
-  margin: 0;
-  padding-top: 5px;
+
+.heart_home i {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
 }
 
 .img_menu {
   width: 100%;
-  height: 275px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -325,25 +367,21 @@ footer .footer_info a:hover {
   margin: 0 17px;
   position: relative;
 }
-.container_menu .container_menu_title h1 {
-  font-family: "Shrikhand";
-  margin: 0;
-}
-.container_menu .container_menu_section {
+
+.container_menu_section {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin: 25px 13px 0 13px;
 }
-.container_menu .container_menu_section .type h2 {
+.container_menu_section .type h2 {
   width: 40px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 19px;
   padding-bottom: 10px;
+  margin-bottom: 12px;
   border-bottom: 3px solid #99E2D0;
 }
-.container_menu .container_menu_section .type .card_menu {
+
+.card_menu {
   margin: 0 0 12px 0;
   background: #FFF;
   border-radius: 25px;
@@ -351,49 +389,53 @@ footer .footer_info a:hover {
   text-decoration: none;
   display: flex;
 }
-.container_menu .container_menu_section .type .card_menu .card_menu_title {
-  width: 88%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0 12px 10px;
+.card_menu .card_menu_title {
+  width: 287px;
+  height: 42px;
+  margin: 12px 0 12px 10px;
+  transition: all 400ms ease-in-out;
 }
-.container_menu .container_menu_section .type .card_menu .card_menu_title h3 {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-  text-overflow: ellipsis;
-}
-.container_menu .container_menu_section .type .card_menu .card_menu_title p {
-  font-size: 15px;
-  font-weight: 300;
-  margin: 0;
-  white-space: nowrap;
-}
-.container_menu .container_menu_section .type .card_menu .card_menu_price {
+.card_menu .card_menu_price {
   width: 12%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 18px;
-  padding: 12px 0px;
+  margin: 12px 0px;
+  padding-top: 25px;
+  text-align: center;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
-.container_menu .container_menu_section .type .card_menu .checked {
+.card_menu .checked {
+  opacity: 0;
+  width: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #99E2D0;
   border-radius: 0 25px 25px 0;
   color: #FFF;
-  font-size: 20px;
+  transition: all 400ms ease-in-out;
+  transform-origin: right 50%;
 }
-.container_menu .container_menu_btn {
+.card_menu:hover .checked {
+  opacity: 1;
+  width: 20%;
+}
+.card_menu:hover .card_menu_title {
+  width: 228px;
+}
+.card_menu:hover .card_menu_title h3, .card_menu:hover .card_menu_title p {
+  border: 1px solid red;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container_menu_btn {
   display: flex;
   justify-content: center;
+}
+
+.heart_page i {
+  position: absolute;
+  bottom: 3px;
+  right: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

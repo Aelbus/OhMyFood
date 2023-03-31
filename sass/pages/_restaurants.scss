@@ -1,6 +1,6 @@
 .img_menu {
     width: 100%;
-    height: 275px;
+    height: auto;
     object-fit: cover;
 }
 .container_menu {
@@ -13,75 +13,82 @@
         display: flex;
         margin: 0 17px;
         position: relative;
-        h1 {
-            font-family: $font_secondary;
-            margin: 0;
+    }
+}
+.container_menu_section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 25px 13px 0 13px;
+    .type {
+        h2 {
+            width: 40px;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+            border-bottom: 3px solid $color_tertiary;
         }
     }
-    .container_menu_section {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        margin: 25px 13px 0 13px;
+}
+.card_menu {
+    margin: 0 0 12px 0;
+    background: #FFF;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    display: flex;
 
-        .type {
-            h2 {
-                @include title__menu__section;
-            }
-            .card_menu {
-                margin: 0 0 12px 0;
-                background: #FFF;
-                border-radius: 25px;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-                text-decoration: none;
-                display: flex;
-                .card_menu_title {
-                    width: 88%;
-                    justify-content: center;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 12px 0 12px 10px;
-                    h3 {
-                        font-size: 18px;
-                        font-weight: 500;
-                        margin: 0;
-                        text-overflow: ellipsis;
-                    }
-                    p {
-                        font-size: 15px;
-                        font-weight: 300;
-                        margin: 0;
-                        white-space : nowrap;
-                    }
-                }
-                .card_menu_price {
-                    width: 12%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    font-size: 15px;
-                    font-weight: 700;
-                    line-height: 18px;
-                    padding: 12px 0px;
-                    white-space : nowrap;
-                    text-overflow: ellipsis;
-                }
-                .checked {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: $color_tertiary;
-                    border-radius: 0 25px 25px 0;
-                    color: #FFF;
-                    font-size: 20px;
-                }
-            }
+    .card_menu_title {
+        width: 287px;
+        height: 42px;
+        margin: 12px 0 12px 10px;
+        transition: all 400ms ease-in-out;
 
-        }
     }
-    .container_menu_btn {
+    .card_menu_price {
+        width: 12%;
+        margin: 12px 0px;
+        padding-top: 25px;
+        text-align: center;
+        white-space : nowrap;
+    }
+    .checked {
+        opacity: 0;
+        width: 0%;
         display: flex;
         justify-content: center;
+        align-items: center;
+        background: $color_tertiary;
+        border-radius: 0 25px 25px 0;
+        color: #FFF;
+        transition: all 400ms ease-in-out;
+        transform-origin: right 50%;
+    }
+    &:hover {
+        .checked {
+            opacity: 1;
+            width: 20%;
+        }
+        .card_menu_title {
+            width: 228px;
+            h3, p {
+                border: 1px solid red;
+                text-overflow: ellipsis; 
+                white-space: nowrap;
+            }
+        }
+    }
 
+}   
+
+.container_menu_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.heart_page {
+    & i {
+        position: absolute;
+        bottom: 3px;
+        right: 12px;
     }
 }
