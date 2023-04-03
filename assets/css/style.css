@@ -159,22 +159,22 @@ h1, h2, h3, p {
 
 .loader_loading div:nth-child(1) {
   left: 8px;
-  animation: loader_loading1 0.8s infinite;
+  animation: loader_loading1 0.8s 4;
 }
 
 .loader_loading div:nth-child(2) {
   left: 8px;
-  animation: loader_loading2 0.8s infinite;
+  animation: loader_loading2 0.8s 4;
 }
 
 .loader_loading div:nth-child(3) {
   left: 32px;
-  animation: loader_loading2 0.8s infinite;
+  animation: loader_loading2 0.8s 4;
 }
 
 .loader_loading div:nth-child(4) {
   left: 56px;
-  animation: loader_loading3 0.8s infinite;
+  animation: loader_loading3 0.8s 4;
 }
 
 @keyframes loader_loading1 {
