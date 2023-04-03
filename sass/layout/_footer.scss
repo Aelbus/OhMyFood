@@ -71,6 +71,7 @@ footer {
             height: 27px;
         }
         .footer_info {
+            display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;

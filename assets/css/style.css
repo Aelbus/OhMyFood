@@ -375,6 +375,7 @@ footer .footer_info a:hover {
     height: 27px;
   }
   footer .footer_info {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
