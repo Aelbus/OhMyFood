@@ -582,13 +582,16 @@ footer .footer_info a:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   text-decoration: none;
   display: flex;
+  transition: all 400ms ease-in-out;
 }
 .card_menu .card_menu_title {
   width: 88%;
   height: 42px;
   margin: 12px 0 12px 10px;
+}
+.card_menu .card_menu_title h3, .card_menu .card_menu_title p {
   overflow: hidden;
-  transition: all 400ms ease-in-out;
+  text-overflow: ellipsis;
 }
 .card_menu .card_menu_price {
   width: 12%;
@@ -613,11 +616,9 @@ footer .footer_info a:hover {
   opacity: 1;
   width: 25%;
 }
-.card_menu:hover .card_menu_title {
-  width: 63%;
-}
 .card_menu:hover .card_menu_title h3, .card_menu:hover .card_menu_title p {
-  text-overflow: "...";
+  width: 63%;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 

@@ -36,13 +36,16 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
     text-decoration: none;
     display: flex;
+    transition: all 400ms ease-in-out;
 
     .card_menu_title {
         width: 88%;
         height: 42px;
         margin: 12px 0 12px 10px;
-        overflow: hidden;
-        transition: all 400ms ease-in-out;
+        h3, p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
     .card_menu_price {
         width: 12%;
@@ -69,9 +72,9 @@
             width: 25%;
         }
         .card_menu_title {
-            width: 63%;
             h3, p {
-                text-overflow:"..."; 
+                width: 63%;
+                text-overflow:ellipsis; 
                 white-space: nowrap;
             }
         }
@@ -89,7 +92,7 @@
         right: 12px;
     }
 }
-
+// - Animation Menu - //
 .entrees {
     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
