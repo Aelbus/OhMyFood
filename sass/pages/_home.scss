@@ -121,3 +121,55 @@
         right: 25px;
     }
 }
+
+// ---------------- Media Queries ------------------ //
+
+// - Tablette - //
+
+@media (min-width: 768px) {
+}
+
+// - Desktop -  //
+
+@media (min-width: 992px) {
+    .fonction_title {
+        margin:48px 0 20px 120px;
+    }
+    .fonction {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 35px;
+    }
+    .fonction_box {
+        width: 300px;
+        .fonction_box_pin {
+            right: 286px;
+            padding: 4px 8px 3px 8px;
+        }
+        .fonction_box_ico{
+            right: 250px;
+        }
+    }
+
+    #restaurants {
+        h2{
+            margin-left: 120px;
+        }
+    }
+    .container_card_resto {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 120px;
+        width: auto;
+    }
+    .card_resto {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
