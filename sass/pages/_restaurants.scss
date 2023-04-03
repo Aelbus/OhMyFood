@@ -71,7 +71,7 @@
         .card_menu_title {
             width: 63%;
             h3, p {
-                text-overflow: ellipsis "..."; 
+                text-overflow:"..."; 
                 white-space: nowrap;
             }
         }
@@ -89,6 +89,29 @@
         right: 12px;
     }
 }
+
+.entrees {
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+}
+.plats {
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 0.3s;
+}
+.desserts {
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 0.6s;
+}
+@keyframes slide-top {
+    0% {
+              transform: translateY(200px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateY(0);
+              opacity: 1;
+    }
+}
+  
 
 // ---------------- Media Queries ------------------ //
 
