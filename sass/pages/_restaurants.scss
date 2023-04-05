@@ -65,7 +65,7 @@
         border-radius: 0 25px 25px 0;
         i {
             color: #FFF;
-            opacity: 0;
+            display: none;
         }
     }
     &:hover {
@@ -73,7 +73,7 @@
             width: 60px;
             animation: right-anim-check 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             i {
-                opacity: 1;
+                display: inline;
             }
         }
     }
