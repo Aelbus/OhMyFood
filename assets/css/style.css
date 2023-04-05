@@ -398,7 +398,6 @@ footer .footer_info a:hover {
 }
 
 .fonction_title {
-  padding-top: 48px 0 20px 0;
   margin: 48px 0 20px 20px;
 }
 
@@ -495,7 +494,7 @@ footer .footer_info a:hover {
   height: auto;
   padding: 12px 0 0 13px;
   text-decoration: none;
-  font-style: "Roboto";
+  
 }
 .card_resto .card_resto_info h3, .card_resto .card_resto_info p {
   margin: 0;
