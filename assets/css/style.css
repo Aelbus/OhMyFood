@@ -609,7 +609,7 @@ footer .footer_info a:hover {
   background: #99E2D0;
   border-radius: 0 25px 25px 0;
   transform: scaleX(0);
-  transition: width 800ms 150ms ease-in-out;
+  transition: width 600ms 150ms ease-in-out;
   transform-origin: right;
 }
 .card_menu .checked i {
