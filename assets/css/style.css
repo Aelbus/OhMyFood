@@ -398,6 +398,7 @@ footer .footer_info a:hover {
 }
 
 .fonction_title {
+  padding-top: 48px 0 20px 0;
   margin: 48px 0 20px 20px;
 }
 
@@ -494,7 +495,7 @@ footer .footer_info a:hover {
   height: auto;
   padding: 12px 0 0 13px;
   text-decoration: none;
-  
+  font-style: "Roboto";
 }
 .card_resto .card_resto_info h3, .card_resto .card_resto_info p {
   margin: 0;
@@ -598,7 +599,6 @@ footer .footer_info a:hover {
   text-align: right;
   width: 10%;
   padding: 35px 10px 0 10px;
-  animation: right-anim 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .card_menu .checked {
   width: 0;
@@ -608,6 +608,9 @@ footer .footer_info a:hover {
   align-items: center;
   background: #99E2D0;
   border-radius: 0 25px 25px 0;
+  transform: scaleX(0);
+  transition: width 800ms 150ms ease-in-out;
+  transform-origin: right;
 }
 .card_menu .checked i {
   color: #FFF;
@@ -615,7 +618,7 @@ footer .footer_info a:hover {
 }
 .card_menu:hover .checked {
   width: 60px;
-  animation: right-anim-check 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transform: scaleX(1);
 }
 .card_menu:hover .checked i {
   display: inline;
@@ -632,16 +635,6 @@ footer .footer_info a:hover {
   right: 12px;
 }
 
-@keyframes right-anim-check {
-  0% {
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
-  }
-  100% {
-    transform: scaleX(1);
-    transform-origin: 100% 100%;
-  }
-}
 .entrees {
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
